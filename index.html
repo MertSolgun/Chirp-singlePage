@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper slider -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+
+
+    <nav class="flex justify-around pt-10 items-center justify-center">
+      <div class="logo text-2xl font-bold text-[#1a60f2d9]">Chirp</div>
+      <div class="mobileHamburger hidden">
+        <img src="./Assets/Hamburger Menu.svg" alt="" class="hidden">
+      </div>
+      <div class="mobileMenu">
+        <ol class="flex justify-end gap-20">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+              <a href="#">
+                <button
+                   class="bg-[#1d8deed9] flex twitterbtn2 rounded-md"
+                >
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z" fill="white"/>
+                    </svg>
+                  Sign in with Twitter
+                </button>
+              </a>
+              <div class="closeBtn">
+                <i class="fa-solid fa-x"></i>
+              </div>
+        </ol>
+      </div>
+      <ul class="flex justify-end gap-20">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">FAQ</a></li>
+          <a href="#">
+            <button
+               class="bg-[#1d8deed9] flex twitterbtn rounded-md"
+            >
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z" fill="white"/>
+                </svg>
+              Sign in with Twitter
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+        <section class="content max-[800px]:px-20  max-[600px]:px-0">
+            <h1 class="text-6xl  max-[1024px]:max-w-2xl max-[1024px]:text-center max-[1024px]:mx-auto max-[800px]:max-w-lg max-[800px]:px-10  ">Twitter analytics taken to a whole new level.</h1>
+            <p class="max-[800px]:max-w-md max-[800px]:px-10 max-[1024px]:max-w-lg max-[1024px]:text-center max-[1024px]:mx-auto  ">Chirp is a suite of Twitter analvtics that will help vou better understand
+                your audience, which tweets they like, and most importantly, when
+                thev are the most active on Twitter.</p>
+                <article class="flex items-center gap-5 max-[800px]:px-10 max-[1024px]:mx-auto  max-[1024px]:justify-center ">
+                    <button
+                    class="bg-[#1d8deed9] flex twitterbtn2 rounded-md"
+                 >
+                 <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z" fill="white"/>
+                     </svg>
+                   Sign in with Twitter
+                 </button>
+                 <a href="#" class="mt-5 text-[#004272d9] text-md">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right" style="color:#004272d9
+
+                    ;"></i>
+                </a>
+                </article>
+                <article class="person max-[800px]:px-10  max-[1024px]:justify-center max-[1024px]:mx-auto">
+                    <ul class="max-[1024px]:mx-auto max-[1024px]:justify-center ">
+                        <li><img src="./Assets/userAvatar01.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar02.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar03.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar04.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar05.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar06.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar07.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar08.svg" alt=""></li>
+                        <li><img src="./Assets/userAvatar09.svg" alt=""></li>
+                    </ul>
+                </article>
+                <section class="info max-[800px]:px-10 max-[1024px]:text-center max-[1024px]:mx-auto">
+                    <p class="max-w-md max-[1024px]:max-w-xl">Join <span class="text-[#004272d9] font-bold">195</span> others who have analyzed their followers and
+                        scheduled <span class="text-[#004272d9] font-bold">1342</span> tweets!
+                    </p>
+                </section>
+
+        </section>
+        <section class="img">
+            <img src="./Assets/Hero Image (Desktop View).png" alt="">
+        </section>
+        <section class="tablet-img max-[1024px]:w-[70%] max-[800px]:w-[80%]">
+            <img src="./Assets/Hero Image (Tablet View).png" alt="">
+        </section>
+    </main>
+</header>
+
+<section class="provide mx-auto pt-20">
+    <div class="provide-title flex pt-20 justify-start">
+        <h1 class="text-5xl max-w-lg max-[800px]:px-20 max-[800px]:max-w-2xl max-[1024px]:text-center max-[1024px]:max-w-2xl max-[1024px]:mx-auto max-[1024px]:justify-center max-[700px]:text-4xl">Features that help you Tweet smarter.</h1>
+    </div>
+    <div class="mainbox grid xl:grid-cols-2 md:grid-cols-1  gap-10 py-10">
+        <div class="box">
+            <span>📈</span>
+            <h5 class="font-bold">Analytics</h5>
+            <p>
+                We constantly monitor your audience as it grows — so you can Tweet
+                when your followers are most likely to be online and ready to engage
+                with your content.
+              </p>
+        </div>
+        <div class="box">
+            <span>🤓</span>
+            <h5>Smart Analyzer</h5>
+            <p>
+                Chirp automatically recognized your followers' most active times and
+                automatically sends you notifications if you're missing out on an
+                opportunity.
+              </p>
+        </div>
+        <div class="box">
+            <span>🗞</span>
+            <h5>Scheduled Your Tweets</h5>
+            <p>
+              Quality tweets drive tons of engagement. With Chirp, you can write
+              tweets in an advance and schedule them when your audience is most
+              likely to read.
+            </p>
+        </div>
+        <div class="box">
+            <span>☀</span>
+            <h5>Dark Mode</h5>
+            <p>
+              Friendly on the eyes, no matter what time you write your Tweets. All
+              colors are chosen to make sure your eyes are at ease at all times.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="customer">
+    <h3 class="text-5xl mx-auto xl:p-10 max-[1024px]:pt-10 max-[1024px]:pb-10 max-[700px]:text-center max-[700px]:text-4xl">What our customers say</h3>
+  <div class="cardMain flex mx-auto gap-10 xl:pl-20 ">
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="mainCustomer">
+            <div class="personel-info">
+            <img src="./Assets/userAvatar02.svg" alt="user" class="user-img">
+            <div class="personel-name">
+              <p>Sara may</p>
+              <p>@sara_may</p>
+            </div>
+          </div>
+          <div class="twitter-img">
+            <img src="./Assets/Twitter (Blue).svg" alt="">
+          </div>
+          <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque commodi ut, obcaecati corrupti recusandae praesentium facilis enim officia deleniti ad.</p>
+          </div>
+          <div class="icon flex  justify-between  items-center">
+            <div class="flex gap-3">
+              <img src="./Assets/Like.svg" alt="">
+              <p>2</p>
+            </div>
+            <div>
+              <p>March 2, 2021</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mainCustomer">
+            <div class="personel-info">
+            <img src="./Assets/userAvatar02.svg" alt="user" class="user-img">
+            <div class="personel-name">
+              <p>Sara may</p>
+              <p>@sara_may</p>
+            </div>
+          </div>
+          <div class="twitter-img">
+            <img src="./Assets/Twitter (Blue).svg" alt="">
+          </div>
+          <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque commodi ut, obcaecati corrupti recusandae praesentium facilis enim officia deleniti ad.</p>
+          </div>
+          <div class="icon flex  justify-between  items-center">
+            <div class="flex gap-3">
+              <img src="./Assets/Like.svg" alt="">
+              <p>2</p>
+            </div>
+            <div>
+              <p>March 2, 2021</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mainCustomer">
+            <div class="personel-info">
+            <img src="./Assets/userAvatar02.svg" alt="user" class="user-img">
+            <div class="personel-name">
+              <p>Sara may</p>
+              <p>@sara_may</p>
+            </div>
+          </div>
+          <div class="twitter-img">
+            <img src="./Assets/Twitter (Blue).svg" alt="">
+          </div>
+          <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque commodi ut, obcaecati corrupti recusandae praesentium facilis enim officia deleniti ad.</p>
+          </div>
+          <div class="icon flex  justify-between  items-center">
+            <div class="flex gap-3">
+              <img src="./Assets/Like.svg" alt="">
+              <p>2</p>
+            </div>
+            <div>
+              <p>March 2, 2021</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div> -->
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+
+    </div>
+    
+    
+</div>
+</section>
+
+<section class="price xl:mb-10">
+  <div class="priceMain">
+    <h1 class="xl:pt-20 max-[1024px]:pt-10  text-5xl max-[700px]:text-4xl">One simple price plan</h1>
+    <p class="text-[#737373] max-[1024px]:pt-5 max-[1024px]:pb-10  max-[700px]:text-center  max-[700px]:max-w-sm ">Start growing your Twitter account by analyzing your follower's patterns</p>  
+
+    <div class="card xl:mt-20 border border-5 border-[#FFCB9A] ">
+      <div class="price-info">
+        <p class="text-2xl">Monthly</p>
+        <p class="text-4xl">$9<span>/mo</span></p>
+      </div>
+      <hr>
+      <ul>
+      <li>
+      <img src="./Assets/Checkmark.svg" alt="">
+      Unlimited* scheduled tweets and threads
+      </li>
+      <li>
+      <img src="./Assets/Checkmark.svg" alt="">
+      Schedule up to 3 weeks in advance
+      </li>
+      <li>
+      <img src="./Assets/Checkmark.svg" alt="">
+        Real-time audience analytics tracking up to 5k followers
+      </li>
+      <hr>
+      </ul>
+      <button class="twitterbtn3 ">
+        <img src="./Assets/Twitter.svg" alt="">
+        Start Trial with Twitter
+      </button>
+  </div>
+
+  </div>
+</section>
+
+<section class="privacy xl:p-5 max-[1024px]:p-5  bg-[#D6F5F4] flex items-center justify-around xl:px-30">
+  <div class="logo text-2xl font-bold text-[#1a60f2d9]">Chirp</div>
+  <div class="flex items-center px-5 gap-5">
+    <img src="./Assets/Twitter (Black).svg" alt="">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Term of Use</a>
+  </div>
+</section>
+  </body>
+
+<script>
+  const mobileHamburger = document.querySelector(".mobileHamburger")
+  const mobileMenu = document.querySelector(".mobileMenu")
+  const closeBtn = document.querySelector(".closeBtn")
+  mobileHamburger.addEventListener("click", function(){
+      mobileMenu.style.display ="flex"
+      mobileHamburger.style.display= "none"
+  })
+  closeBtn.addEventListener("click",function(){
+      mobileMenu.style.display="none"
+      mobileHamburger.style.display= "block"
+
+  })
+
+
+  const swiper = new Swiper('.swiper', {
+
+    direction: 'horizontal',
+    
+    loop: false,
+  
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  
+</script>
+</html>

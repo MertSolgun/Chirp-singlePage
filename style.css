@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+
+nav .logo {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+}
+nav ul li a {
+  color: #555555d9;
+}
+.img img {
+  max-width: 520px;
+  padding-top: 2rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+header {
+  background-color: #faf7f0d9;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  margin: auto;
+  max-width: 1200px;
+}
+.content {
+  font-family: "Inter", sans-serif;
+}
+.content h1 {
+  width: 550px;
+}
+.content p {
+  padding-top: 1rem;
+  color: #555555d9;
+}
+
+.twitterbtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  align-items: center;
+  height: 60px;
+  width: 220px;
+  letter-spacing: 1px;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.twitterbtn2 {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 220px;
+  letter-spacing: 1px;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.content article a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.person ul {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.person {
+  position: relative;
+}
+
+.person ul li img {
+  position: absolute;
+}
+.info {
+  padding-top: 3rem;
+}
+/* Header */
+
+/* Provide section */
+
+.provide {
+  max-width: 1200px;
+}
+
+.mainbox .box {
+  border: 1px solid gray;
+  padding: 3rem 4rem 4rem;
+  border-radius: 10px;
+}
+.mainbox p {
+  color: #555555d9;
+  font-weight: 300;
+}
+
+.tablet-img {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+/* customer */
+
+.customer {
+  background-color: #cef3f2d9;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: auto;
+}
+
+.cardMain {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainCustomer {
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.personel-info {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.twitter-img {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+.twitter-img img {
+  width: 30px;
+  height: 30px;
+}
+.user-img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Card */
+
+.priceMain {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  height: 450px;
+  background-color: #fbf8f3;
+  border-radius: 10px;
+  padding: 1rem 2rem 3rem 2rem;
+}
+.price-info {
+  padding: 1rem;
+}
+.price p:nth-child(1) {
+  font-weight: 100;
+}
+.price p:nth-child(2) {
+  font-weight: bold;
+}
+.price span {
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.twitterbtn3 {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  gap: 10px;
+  background-color: #01abed;
+  color: white;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+/* Privacy  */
+
+/* Media query */
+
+@media (max-width: 900px) {
+  nav ul a {
+    display: none;
+  }
+  nav {
+    justify-content: start !important;
+    padding: 2rem;
+  }
+  .mobileHamburger {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+    cursor: pointer;
+  }
+  .mobileHamburger img {
+    display: block;
+  }
+  .mobileMenu {
+    background-color: #4641367e;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 111;
+    width: 100vw;
+    border-radius: 10px;
+    animation: myAnim 2s ease 0s 1 alternate-reverse forwards;
+  }
+
+  .closeBtn {
+    position: absolute;
+    bottom: 50px;
+    font-size: 2rem;
+    cursor: crosshair;
+  }
+  @keyframes myAnim {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+
+    15% {
+      transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+      transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+      transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  .mobileMenu ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 2rem 3rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+  }
+  .mobileMenu ol a {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
+  .mobileMenu ol button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mainbox .box {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .img {
+    display: none;
+  }
+  .tablet-img {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .content h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .content {
+    padding: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .twitterbtn2 {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    letter-spacing: 1px;
+    gap: 10px;
+    color: white;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+  }
+  .content article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  header {
+    padding-bottom: 2rem;
+  }
+  .provide-title {
+    padding-top: 0rem;
+  }
+  .mainbox .box {
+    padding: 2rem 2rem 2rem;
+  }
+  .customer h3 {
+    font-size: 2rem;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .cardMain {
+    display: flex;
+    width: 100%;
+  }
+
+  .mainCustomer {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+  }
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
